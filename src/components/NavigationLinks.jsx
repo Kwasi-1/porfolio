@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { to: '/work', label: 'WORK' },
-  { to: '#about', label: 'ABOUT' },
-  { to: '#shop', label: 'SHOP' },
-  { to: '#contact', label: 'CONTACT' }
+  { to: '/about', label: 'ABOUT' },
+  { to: '/shop', label: 'SHOP' },
+  { to: '/contact', label: 'CONTACT' }
 ];
 
 const NavigationLinks = () => {
