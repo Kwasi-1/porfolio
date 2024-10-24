@@ -1,14 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+const links = [
+  { to: '/work', label: 'WORK' },
+  { to: '#about', label: 'ABOUT' },
+  { to: '#shop', label: 'SHOP' },
+  { to: '#contact', label: 'CONTACT' }
+];
 
 const NavigationLinks = () => {
   return (
-    <div className="grid grid-cols-1 text-[11vw] font-[300] font-custom leading-[1] pl-[7%] pt-[10%]">
-      <Link to="work" className='hover:italic transform ease-in-out duration-300'>WORK</Link>
-      <Link to="#about" className='hover:italic transform ease-in-out duration-300'>ABOUT</Link>
-      <Link to="#shop" className='hover:italic transform ease-in-out duration-300'>SHOP</Link>
-      <Link to="#contact" className='hover:italic transform ease-in-out duration-300'>CONTACT</Link>
-    </div>
+    <nav aria-label="Primary Navigation">
+      <div className="grid grid-cols-1 text-[10vw] font-[300] font-custom leading-[1] pl-[7%] pt-[13%]">
+        {links.map((link) => (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            className="justify-between items-center hover:italic hover:translate-x-[5px] transform ease-in-out duration-300 w-fit"
+            aria-label={link.label}
+          >
+            {link.label}
+          </NavLink>
+        ))}
+      </div>
+    </nav>
   );
 };
 

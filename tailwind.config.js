@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'custom': ['"Grandslang roman"', 'serif'],  // Custom font
+        'custom': ['Grandslang Roman', 'cursive'],  // Custom font
+        'body' : ['Montserrat', 'sans-serif']
       },
       colors: {
         primary: '#1a1818',   // Black background for Work Page
-        accent: '#f5f5f5',    // Light background for Home Page
+        accent: '#ece7e1',    // Light background for Home Page
       },
       backgroundColor: {
         'dark': '#1a1818',    // Background for Work Page
