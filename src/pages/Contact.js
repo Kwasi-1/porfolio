@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import Sidebar from "../components/Sidebar";
 
 const Contact = () => {
@@ -14,21 +14,20 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex bg-dark text-accent"
+      className="relative flex bg-dark text-accent"
     >
-      <Sidebar/>
+      <Sidebar />
 
-      <div className=" relative max-w-[90%] pl-[10%] pr-[5%] text-[13px] font-body font-[400] tracking-wide leading-[1.9]">
-        <div className=" fixed w-[25%] h-screen flex flex-col flex-start justify-center text-left">
+      <div className="relative w-[90%] mx-auto pl-[10%] pr-[5%] text-[13px] font-body font-normal tracking-wide leading-[1.9]">
+        <div className="fixed w-[25%] h-screen flex flex-col justify-center text-left">
+          <h1 className="font-custom text-[14vw] leading-none mb-7 font-light">Hello.</h1>
 
-          <h1 className="font-custom text-[14vw] leading-[1] mb-7 font-[300]">Hello.</h1>
-
-          <div className="flex flex-col gap-6" >
+          <div className="flex flex-col gap-6">
             <p>
               Need a beautiful, well-structured website that you can own and maintain
               yourself? Get in touch.
             </p>
-            
+
             <div>
               <div>
                 <label>Email:</label>
@@ -37,18 +36,18 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className="flex gap-1">
-                <label className="w-fit">On the Internet:</label>
-                <div className="space-x-2">
+              <div className="gap-1 items-center">
+                <label>On the Internet:</label>
+                <div className="ml-1 inline">
                   {contactLinks.map((contact, index) => (
                     <a
                       key={contact.id}
                       href={contact.link}
-                      className="underline hover:line-through"
+                      // className="underline hover:line-through transition duration-1000"
                       aria-label={contact.name}
                     >
-                      {contact.name}
-                      {(index < contactLinks.length-1) && ' /'}
+                      <span className='underline hover:line-through transition duration-1000'>{contact.name}</span>
+                      {index < contactLinks.length - 1 && ' / '}
                     </a>
                   ))}
                 </div>
@@ -56,7 +55,7 @@ const Contact = () => {
             </div>    
           </div>
         </div>
-      </div>  
+      </div>
     </motion.section>
   );
 };

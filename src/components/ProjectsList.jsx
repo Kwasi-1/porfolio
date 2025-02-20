@@ -10,7 +10,7 @@ const ProjectsList = () => {
   ];
 
   return (
-    <div className="flex flex-col space-y-6 text-[7vw] w-[65%] h-[90vh] ml-[10%] pt-[10%] font-light font-custom leading-[1]">
+    <div className="relative flex flex-col space-y-6 text-[7vw] w-[65%] h-[90vh] ml-[10%] pt-[10%] font-light font-custom leading-[1]">
       {projects.map((project, index) => (
         <Link key={index} className="justify-between items-center w-fit">
           <h2 className="hover:italic hover:translate-x-[5px] transform ease-in-out duration-300 w-fit">{project.name}</h2>

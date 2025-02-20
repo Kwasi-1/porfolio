@@ -14,7 +14,7 @@ const Home = () => {
       <Sidebar />
       
       {/* Main container split into two halves */}
-      <div className="flex max-w-[90%] pl-[8%] pr-[5%]">
+      <div className="flex mx-auto max-w-[90%] pl-[8%] pr-[5%]">
         
         {/* Left Section (Header) */}
         <MainContent title='AFFUL NANA KWASI' paragraphs={homeParagraphs} />

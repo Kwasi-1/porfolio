@@ -10,15 +10,16 @@ const Work = () => {
   ];
 
   return (
-    <div className="flex bg-dark text-accent h-screen">
+    <div className="flex bg-dark text-accent min-h-screen">
       <Sidebar />
 
       {/* Main container split into two halves */}
-      <div className="flex max-w-[90%] pl-[8%] pr-[5%]">
+      <div className="relative mx-auto max-w-[90%] pt-16 pl-[8%] pr-[5%]">
 
         {/* Left Section (Header) */}
+        <div className="fixed ">
         <MainContent title="work" paragraphs={workParagraphs} />
-
+        </div>
         {/* Right Section (Scrollable Project List) */}
         {/* <div className="flex justify-center items-center pr-10"> */}
           <ProjectsList />
