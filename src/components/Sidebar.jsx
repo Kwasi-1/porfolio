@@ -18,9 +18,9 @@ const Sidebar = () => {
           {/* Social Links */}
           {isHomePage ? (
             <div className="flex flex-col space-y-10 mt-4 text-center items-center">
-              <a href="#" title='github' className="textxs hover:line-through -rotate-90">GH</a>
-              <a href="#" title='twitter' className="textxs hover:line-through -rotate-90">TW</a>
-              <a href="#" title='linkedIn' className="textxs hover:line-through -rotate-90">LI</a>
+              <a href="https://github.com/Kwasi-1" title='github' className="textxs hover:line-through -rotate-90">GH</a>
+              <a href="https://x.com/kwasi11351391" title='twitter' className="textxs hover:line-through -rotate-90">TW</a>
+              <a href="https://www.linkedin.com/in/nana-kwasi-afful-700a1b283/" title='linkedIn' className="textxs hover:line-through -rotate-90">LI</a>
             </div> 
             ) : (
             <Link to='/' className='-rotate-90 hover:line-through text-center uppercase mb-5 '>Home</Link>
