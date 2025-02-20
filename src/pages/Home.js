@@ -14,10 +14,10 @@ const Home = () => {
       <Sidebar />
       
       {/* Main container split into two halves */}
-      <div className="flex mx-auto max-w-[90%] pl-[8%] pr-[5%]">
+      <div className="flex max-w-[90%] pl-[8%] pr-[5%]">
         
         {/* Left Section (Header) */}
-        <MainContent title='AFFUL NANA KWASI' paragraphs={homeParagraphs} />
+        <MainContent title='AFFUL NANA KWASI' paragraphs={homeParagraphs} paddingTop="pt-[30%]" />
 
         {/* Right Section (Links) */}
         <div className="flex justify-center items-center w-[65%] h-[90vh]">

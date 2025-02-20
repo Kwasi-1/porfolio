@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import ProjectsList from '../components/ProjectsList';
 import MainContent from '../components/MainContent';
+import Layout from '../Layout';
 
 const Work = () => {
   const workParagraphs = [
@@ -10,23 +11,23 @@ const Work = () => {
   ];
 
   return (
-    <div className="flex bg-dark text-accent min-h-screen">
-      <Sidebar />
+    <Layout backgroundColor="#1a1818">
 
-      {/* Main container split into two halves */}
-      <div className="relative mx-auto max-w-[90%] pt-16 pl-[8%] pr-[5%]">
+      <div className="flex bg-dark text-accent min-h-screen">
+        <Sidebar />
 
-        {/* Left Section (Header) */}
-        <div className="fixed ">
-        <MainContent title="work" paragraphs={workParagraphs} />
+        {/* Main container split into two halves */}
+        <div className="flex min-h-screen max-w-[90%] pt32 pl-[8%] pr-[5%]">
+
+          {/* Left Section (Header) */}
+          <MainContent title="work" paragraphs={workParagraphs} paddingTop="pt-[28%]" />
+
+          {/* Right Section (Scrollable Project List) */}
+            <ProjectsList />
+
         </div>
-        {/* Right Section (Scrollable Project List) */}
-        {/* <div className="flex justify-center items-center pr-10"> */}
-          <ProjectsList />
-        {/* </div> */}
-
       </div>
-    </div>
+    </Layout>
   );
 };
 
