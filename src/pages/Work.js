@@ -6,13 +6,12 @@ import Layout from '../Layout';
 
 const Work = () => {
   const workParagraphs = [
-    'This is a showcase of my best work in a variety of fields including Graphic and Web Design, No-Code Development, Product Design, and Product Management.',
-    'The world of digital design and development is constantly evolving and so has my role over the last 15 years. I’m still learning and gaining new skills every day.'
+    'This is a showcase of my best work in frontend development, UI engineering, performance optimization, and web accessibility.',
+    'The web is always evolving, and so is my approach to building fast, scalable applications. I craft interactive, user-friendly experiences with React, Next.js, and TypeScript.'
   ];
 
   return (
     <Layout backgroundColor="#1a1818">
-
       <div className="flex bg-dark text-accent min-h-screen">
         <Sidebar />
 
@@ -23,7 +22,7 @@ const Work = () => {
           <MainContent title="work" paragraphs={workParagraphs} paddingTop="pt-[28%]" />
 
           {/* Right Section (Scrollable Project List) */}
-            <ProjectsList />
+          <ProjectsList />
 
         </div>
       </div>

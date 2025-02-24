@@ -2,16 +2,19 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import NavigationLinks from '../components/NavigationLinks';
 import MainContent from '../components/MainContent';
+import WorKTogether from '../components/WorkTogether';
 
 const Home = () => {
   const homeParagraphs = [
-    'Product Designer / Webflow Developer / Framer Developer and Partner.',
-    'Currently working full-time as a Senior Product Designer at Detail Technologies.'
+    'Frontend Developer | React | Next.js | TypeScript | Internationalization',
+    'Passionate about building interactive, scalable, and accessible web applications.',
+    // 'Currently working on an LMS platform for school websites in Ghana and neighboring African countries.'
   ];
 
   return (
     <div className='flex bg-light text-primary h-screen'>
       <Sidebar />
+      <WorKTogether/>
       
       {/* Main container split into two halves */}
       <div className="flex max-w-[90%] pl-[8%] pr-[5%]">

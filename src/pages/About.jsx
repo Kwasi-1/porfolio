@@ -4,64 +4,58 @@ import Layout from "../Layout";
 
 const About = () => {
   const experience = [
-    "Degree in Brand Communications",
-    "15 years experience in Digital Design, Web Development, Advertising and Product Development",
-    "12 years experience in Web Design",
-    "10 years experience in Software Design",
-    "3 years experience in Front-end Web Development",
+    "3 years of experience in Frontend Development",
+    "Frontend Developer with expertise in React, Next.js, and TypeScript",
+    "Building scalable, high-performance web applications",
+    "Experience in internationalization and multilingual web applications",
+    "Strong background in UI development and state management",
+    "Proficient in designing and integrating APIs",
   ];
 
   const skills = [
-    "UI/UX Design",
-    "Strategy",
-    "Product Management",
-    "User Research",
-    "Agile Methodologies",
-    "Collaboration",
-    "Design Sprints",
-    "Design Systems",
-    "HTML and CSS",
-    "CMS Design & Architecture",
-    "Webflow Development",
-    "Framer Development",
-    "Photography",
-    "Graphic Design",
-  ];
-
-  const kudos = [
-    "Shawn Roos",
-    "Wayne Berry",
-    "Daniel Klopper",
-    "Michael Thorne",
-    "Kobus Brummer",
-    "Pascal Righini",
-    "Jade Scully",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "Internationalization (i18n)",
+    "REST & GraphQL APIs",
+    "Version Control (Git & GitHub)",
+    "Agile Development",
+    "Performance Optimization",
+    "Unit Testing & Integration Testing",
+    "Web Accessibility",
   ];
 
   return (
     <Layout backgroundColor="#ece7e1">
       <div className="flex bg-light text-primary">
         <Sidebar />
-        <div className="relative mx-auto max-w-[90%] pl-[10%] pr-[5%] text-sm font-body font-[400] tracking-wide leading-[1.9] pb-11 ">
+        <div className="relative mx-auto max-w-[90%] pl-[10%] pr-[5%] text-sm font-body font-[400] tracking-wide leading-[1.9] pb-11">
           <div className="w-[50%] pt-[10%] pb-[8%] flex flex-col justify-center text-left">
             <h1 className="font-custom text-[14vw] leading-none my-7 font-[300]">About</h1>
 
-            <p className="font-custom text-[46px] text-[300] leading-[1.3] mb-9 ">I'm Lauren. A designer, maker and problem solver.</p>
+            {/* Updated Introduction */}
+            <p className="font-custom text-[40px] text-[300] leading-[1.3] mb-9 ">
+              I'm Nana Kwasi, a frontend developer passionate about building interactive web applications.
+            </p>
+            
             <p className="mb-7">
-              The cusp of art and technology has always fascinated me, and I've never been afraid to jump in and give it a go, whether it's Paint, Photoshop, Sketch, or CSS. I've been designing with computers since the day I first opened Microsoft Paint.
+              My journey began with a curiosity about how websites function—from buttons clicking to seamless animations. Over time, I honed my skills in React, Next.js, TypeScript, and Tailwind CSS, allowing me to create scalable and accessible digital experiences.
             </p>
             <p className="mb-7">
-              Fast forward to 2023, and I've tried it all, from Digital Campaign Design and Flash Actionscript to Web Design, Animation, HTML/CSS, No-Code Web Development, Product Design, and Product Management. Everything I have done, small or big, has been a vital stepping stone for where I am today.
+              I enjoy solving complex problems, optimizing workflows, and collaborating with designers and backend engineers to bring ideas to life. Whether it's improving performance, refining UI/UX, or implementing internationalization (i18n), I'm always excited about building solutions that enhance user experience.
             </p>
-            <p className="mb-7">
-              What excites me most about being a Product Designer is the ability to design and create things that have purpose and solve real problems. It goes beyond designing buttons and websites and involves having a passion for creating experiences and solutions that help people.
-            </p>
-            <p className="mb-7">This is one of my favourite quotes (by Peter Drucker):</p>
-            <blockquote className="font-custom text-[46px] text-[300] leading-[1.3] mb-9 ">
-              “There is nothing so useless as doing efficiently that which should not be done at all.”
+
+            <h3 className="my-8 font-[500] font-custom text-xl uppercase tracking-[5px]">Words I Live By</h3>
+            <blockquote className="font-custom text-[36px] text-[300] leading-[1.3] mb-9 ">
+              “Do the hard things.”  
+              <span className="block text-right text-lg mt-2">— Strive Masiyiwa</span>
             </blockquote>
+
+            <h3 className="my-8 font-[500] font-custom text-xl uppercase tracking-[5px]">What I'm Working On</h3>
             <p className="mb-7">
-              This quote resonates with me because I have no desire to make pretty things just for the sake of it. I only want to make, design, or build ideas and products that matter and have an impact in the world.
+              Currently, I'm exploring ways to improve user experience in web applications by optimizing performance, enhancing accessibility, and integrating cutting-edge design principles.
             </p>
 
             <h3 className="my-8 font-[500] font-custom text-xl uppercase tracking-[5px]">Experience</h3>
@@ -78,15 +72,15 @@ const About = () => {
               ))}
             </ul>
 
-            <Link className="my-4 px-[60px] py-5 w-fit text-2xl leading-[20px] font-custom bg-dark text-accent hover:bg-secondary rounded-full hover:px-[100px] ease-in-out transition-[padding] duration-300 tracking-[1px]">
-              My CV
+            <Link to='/resume' className="my-4 px-[60px] py-5 w-fit text-2xl leading-[20px] font-custom bg-dark text-accent hover:bg-secondary rounded-full hover:px-[100px] ease-in-out transition-[padding] duration-300 tracking-[1px]">
+              My Resume
             </Link>
 
-            <h3 className="my-8 font-[500] font-custom text-xl uppercase tracking-[5px]">Kudos</h3>
-            <p className="mb-4">
-              Most of what is in this portfolio is teamwork. I have only included work where I made a significant contribution, but these people have influenced my career:{" "}
-              {kudos.join(", ")}.
+            <h3 className="my-8 font-[500] font-custom text-xl uppercase tracking-[5px]">Let's Connect</h3>
+            <p className="mt7 mb-7">
+              I'm always open to collaborating on new projects, discussing innovative ideas, or sharing insights on web development. If you'd like to connect, feel free to reach out!
             </p>
+
             <Link to='/contact' className="my-4 px-[60px] py-5 w-fit text-2xl leading-[20px] font-custom bg-dark text-accent hover:bg-secondary rounded-full hover:px-[100px] ease-in-out transition-[padding] duration-300 tracking-[1px]">
               Contact Me
             </Link>
