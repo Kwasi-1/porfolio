@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Route path='/work' element={<Work />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
-        {/* <Route path='/' element={<About />} /> */}
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:postId' element={<BlogPost />} />
       </Routes>  
     </Router>
   );
