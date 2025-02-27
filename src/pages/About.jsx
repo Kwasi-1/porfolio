@@ -29,10 +29,10 @@ const About = () => {
 
   return (
     <Layout backgroundColor="#ece7e1">
-      <div className="flex bg-light text-primary">
+      <div className="flex flex-col lg:flex-row bg-light text-primary">
         <Sidebar />
         <div className="relative mx-auto w-full lg:max-w-[90%] pl-[5%] lg:pl-[10%] pr-[5%] text-sm font-body font-[400] tracking-wide leading-[1.9] pb-11">
-          <div className="w-full lg:w-[50%] pt-[10%] pb-[8%] flex flex-col justify-center text-left">
+          <div className="w-full lg:w-[50%] pt-[10%] pb-[8%] flex flex-col justify-center text-left px-[4%] lg:px-0">
             {/* Heading */}
             <h1 className="font-custom text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[14vw] leading-none my-7 font-[300]">
               About

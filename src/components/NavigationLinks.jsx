@@ -11,7 +11,7 @@ const links = [
 const NavigationLinks = () => {
   return (
     <nav aria-label="Primary Navigation">
-      <div className="grid grid-cols-1 text-[11vw] font-[300] font-custom leading-[0.95] pl-[7%] pt-[15%] ml-[85%]">
+      <div className="grid grid-cols-1 text-6xl lg:text-[11vw] font-[300] font-custom leading-[1.1] lg:leading-[0.95] lg:pl-[7%] lg:pt-[15%] lg:ml-[85%]">
         {links.map((link) => (
           <NavLink
             key={link.to}

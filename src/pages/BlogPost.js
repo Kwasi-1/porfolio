@@ -32,11 +32,11 @@ const BlogPost = () => {
 
   return (
     <Layout backgroundColor="#1a1818">
-      <div className="flex bg-dark text-accent min-h-screen">
+      <div className="flex flex-col lg:flex-row bg-light text-primary min-h-screen">
         <Sidebar />
-        <div className="mx-auto max-w-[80%] pt-[10%] text-left">
+        <div className="mx-auto pt-[20%] max-w-[80%] lg:pt-[10%] text-left">
           <h1 className="font-custom text-[6vw] font-light mb-6">{blog.title}</h1>
-          <p className="text-lg leading-[1.8] whitespace-pre-line">{blog.content}</p>
+          <p className="text-[14px] lg:text-[17px] leading-[1.8] font-body whitespace-pre-line">{blog.content}</p>
         </div>
       </div>
     </Layout>

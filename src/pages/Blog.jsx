@@ -19,17 +19,17 @@ const blogs = [
 const Blog = () => {
   return (
     <Layout backgroundColor="#1a1818">
-      <div className="flex bg-dark text-accent min-h-screen">
+      <div className="flex flex-col lg:flex-row bg-dark text-accent min-h-screen">
         <Sidebar />
 
-        <div className="flex flex-col mx-auto max-w-[80%] pt-[10%] text-left ">
+        <div className="flex flex-col mx-auto max-w-[80%] pt-[20%] lg:pt-[10%] text-left ">
           <h1 className="font-custom text-[14vw] font-light mb-12">Blog</h1>
 
           {blogs.map((blog, index) => (
-            <div key={index} className="mb-10 pb-5 border-b border-gray-700 w-[90%]">
-              <h2 className="text-2xl font-light mb-3">{blog.title}</h2>
-              <p className="text-sm mb-4 tracking-wider font-body">{blog.excerpt}</p>
-              <Link to={blog.link} className="text-accent hover:underline text-xl">
+            <div key={index} className="mb-10 pb-5 border-b border-gray-700 w-full lg:w-[90%]">
+              <h2 className="text-xl lg:text-2xl font-light mb-3">{blog.title}</h2>
+              <p className="text-[13px] text-sm mb-4 tracking-wider font-body">{blog.excerpt}</p>
+              <Link to={blog.link} className="text-accent hover:underline text-lg font-body">
                 Read More →
               </Link>
             </div>

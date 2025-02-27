@@ -14,12 +14,12 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative flex bg-dark text-accent"
+      className="relative flex flex-col lg:flex-row w-full bg-dark text-accent min-h-screen"
     >
       <Sidebar />
 
-      <div className="relative w-[90%] mx-auto pl-[10%] pr-[5%] text-[13px] font-body font-normal tracking-wide leading-[1.9]">
-        <div className="fixed w-[25%] h-screen flex flex-col justify-center text-left">
+      <div className="relative w-full lg:w-[90%] mx-auto px-[10%] lg:pl-[10%] lg:pr-[5%] text-[13px] font-body font-normal tracking-wide leading-[1.9]">
+        <div className="lg:fixed lg:w-[25%] h-screen flex flex-col pt-[25%] lg:pt-0 lg:justify-center text-left">
           <h1 className="font-custom text-[14vw] leading-none mb-7 font-light">Hello.</h1>
 
           <div className="flex flex-col gap-6">
