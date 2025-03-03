@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'custom': ['Grandslang Roman', 'serif'],  // Custom font
+        'custom': ['Grandslang Roman', 'Poppins' , 'sans-serif'],  // Custom font
         'body' : ['Montserrat', 'sans-serif']
       },
       colors: {
