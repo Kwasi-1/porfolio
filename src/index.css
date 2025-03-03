@@ -6,8 +6,9 @@
       url('fonts/subset-GrandSlang-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
+
 
 body {
   margin: 0;

@@ -16,7 +16,7 @@ const ProjectsList = () => {
           href={project.url} // Use the external URL here
           target="_blank" // Open link in a new tab
           rel="noopener noreferrer" // Security best practice for external links
-          className="justify-between items-center w-fit hover:italic hover:translate-x-[5px] transform ease-in-out duration-300"
+          className="justify-between items-center w-fit hover:italic hover:translate-x-2 transform ease-in-out duration-300"
         >
           <h2 className="uppercase">{project.name}</h2>
           <div className="flex items-center space-x-2 mt-1 sm:mt-2">

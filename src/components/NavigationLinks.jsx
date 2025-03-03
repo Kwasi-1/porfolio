@@ -16,7 +16,7 @@ const NavigationLinks = () => {
           <NavLink
             key={link.to}
             to={link.to}
-            className="justify-between items-center hover:italic hover:translate-x-[5px] transform ease-in-out duration-300 w-fit"
+            className="transform justify-between items-center hover:italic hover:translate-x-2  ease-in-out duration-300 w-fit"
             aria-label={link.label}
           >
             {link.label}
