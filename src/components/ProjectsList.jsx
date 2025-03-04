@@ -2,10 +2,10 @@ import React from 'react';
 
 const ProjectsList = () => {
   const projects = [
-    { name: 'Amazon', type: 'Frontend Development', url: 'https://www.amazon.com' },
-    { name: 'SwissBik', type: 'Internationalization (i18n)', url: 'https://www.swissbik.com', new: true },
-    { name: 'AutoChef', type: 'Frontend Development', url: 'https://www.autochef.com', new: true },
-    { name: 'Dept.CS', type: 'Frontend Development', url: 'https://www.deptcs.com' },
+    { name: 'Amazon', type: 'Frontend Development', url: 'https://kwasi-1.github.io/Amazon-Project/amazon.html' },
+    { name: 'SwissBik', type: 'Internationalization (i18n)', url: 'https://swissbik-save.vercel.app/en', new: true },
+    { name: 'AutoChef', type: 'Frontend Development', url: 'https://autochef.onrender.com/', new: true },
+    { name: 'Dept.CS', type: 'Frontend Development', url: 'https://kwasi-1.github.io/11091069_DCIT205/cs_home_page.html' },
   ];
 
   return (
